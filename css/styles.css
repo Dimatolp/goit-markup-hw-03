@@ -18,14 +18,41 @@ body{
     letter-spacing: 0.03em;
     font-size: 14px;
     }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
     
     .list {
         list-style: none;
         
     }
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
 
 /* Логотип */
 .logo{
+        padding-top: 24px;
+        padding-bottom: 25px;
+
         font-family: Raleway, sans-serif ;
         font-weight: 700;
         font-size: 26px;
@@ -46,20 +73,42 @@ body{
 .logo-end{
     color: var(--primary-color);
 }
+
+/* Header */
+
+
+
 /* Навигация по сайту */
-.site-nav a{
-        
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item + .item{
+    
+    margin-left: 50px;
+}
+
+
+
+
+.site-nav .link{
+
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        color: var(--main-text-color);
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--main-text-color);
         list-style: none;
         text-decoration: none;
         
+        
 }
 
-.site-nav a:hover,
-.site-nav a:focus
+.site-nav .link:hover,
+.site-nav .link:focus
 
 {
 color: var(--accent-color);
@@ -68,10 +117,29 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+/* Main-nav */
+
+.main-nav{
+    display: flex;
+}
+
 /* Адрес в шапке */
 
-.header-address a{
-    font-weight: 500;
+.header-address{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.header-address .item + .item{
+    margin-left: 50px;
+}
+
+.header-address .link{
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
@@ -79,20 +147,52 @@ color: var(--accent-color);
         text-decoration: none;
         
 }
-.header-address a:hover,
-.header-address a:focus
+.header-address .link:hover,
+.header-address .link:focus
 {
     color: var(--accent-color);
 }
 
+/* header container */
+
+
+.header-container{
+    text-align: center;
+    align-items: center;
+}
+
+/* container */
+.container {
+    display: flex;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 1200px;
+
+
+    outline: 2px solid green;
+}
+
+
+
 
 /* Герой */
 
+.hero{
+    text-align: center;
+    margin-bottom: 94px;
+}
+
 .hero-title{
+        
+    margin-bottom: 30px;
+    
     font-weight: 900;
         font-size: 44px;
         line-height: 1.4;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     
@@ -102,6 +202,9 @@ color: var(--accent-color);
     background-color: var(--secondary-color);
 }
 .btn{
+    padding: 10px 32px;
+    
+
     background-color: var(--accent-color);
     color: var(--primary-color);
     font-family: inherit;
@@ -109,10 +212,10 @@ color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
+
+    border: var(--accent-color);
+    border-radius: 4px;
 }
 .btn:hover,
 .btn:focus{
@@ -120,8 +223,39 @@ color: var(--accent-color);
     color: var(--main-text-color);
 }
 
+/* list-row */
+.list-row{
+    display: flex;
+}
+
+.list-row .item{
+    width: 270px;
+}
+
+.list-row .item{
+
+    margin-right: 30px;
+}
+
+.list-row .item:last-child{
+    margin-right: 0px;
+}
+
+/* caption */
+.caption{
+    align-self:center;
+
+}
 /* Секции */
+.section{
+    margin-bottom: 94px;
+    justify-content:space-around;
+}
+
 .section-title{
+        margin-bottom: 10px;
+
+
     font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
