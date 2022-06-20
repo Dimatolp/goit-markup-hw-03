@@ -244,6 +244,7 @@ color: var(--accent-color);
 /* caption */
 .caption{
     align-self:center;
+    margin-bottom: 50px;
 
 }
 /* Секции */
