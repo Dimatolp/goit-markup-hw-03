@@ -31,7 +31,7 @@ body{
             padding: 0;
         }
     
-    .list {
+    .items-decoration {
         list-style: none;
         
     }
@@ -81,7 +81,7 @@ body{
 /* Навигация по сайту */
 .site-nav{
     display: flex;
-    margin-left: 93px;
+    padding-left: 93px;
 }
 .site-nav .item + .item{
     
@@ -173,7 +173,7 @@ color: var(--accent-color);
     width: 1200px;
 
 
-    outline: 2px solid green;
+    
 }
 
 
@@ -188,7 +188,7 @@ color: var(--accent-color);
 
 .hero-title{
         
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     
     font-weight: 900;
         font-size: 44px;
@@ -223,38 +223,44 @@ color: var(--accent-color);
     color: var(--main-text-color);
 }
 
-/* list-row */
-.list-row{
+/* list */
+.list{
     display: flex;
+    
 }
 
+ .list .item{
+margin-right: 30px;
+
+
+} 
+
+
+/* list-row */
 .list-row .item{
     width: 270px;
+    
 }
 
-.list-row .item{
-
-    margin-right: 30px;
-}
-
-.list-row .item:last-child{
+.list .item:last-child{
     margin-right: 0px;
 }
 
 /* caption */
 .caption{
     align-self:center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 
 }
 /* Секции */
 .section{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     justify-content:space-around;
 }
 
+
 .section-title{
-        margin-bottom: 10px;
+        padding-bottom: 10px;
 
 
     font-weight: 700;
@@ -266,6 +272,11 @@ color: var(--accent-color);
         line-height: 1.71;
         color: var(--secondary-text-color);
 }
+
+.section-team .item{
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 .section>h2,
 .section-team>h2{
     font-weight: 700;
@@ -274,14 +285,36 @@ color: var(--accent-color);
         text-align: center;
         
 }
+
+/* container-team */
+.container-team{
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+}
+
+/* pic */
+.pic{
+    padding-bottom: 30px;
+}
+
+.container .container-team + .container-team{
+    margin-left: 30px;
+}
+
 .section-team{
     background-color: var(--secondary-grey-color);
+    padding-bottom: 94px;
 }
 .section-team-color{
     background-color: var(--primary-color);
     
+    
 }
 .team-name{
+        padding-bottom: 10px;
+
     font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -289,7 +322,8 @@ color: var(--accent-color);
         
 }
 .team-job{
-        
+       padding-bottom: 30px; 
+
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -298,10 +332,26 @@ color: var(--accent-color);
 
 
 /* Подвал */
+
+
+.basement .logo{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 215px;
+}   
+
+.container-address{
+    margin-left: 215px;
+}
+
 .basement{
-    background-color: var(--secondary-color);
+background-color: var(--secondary-color);
+    
 }
 .basement-address{
+        padding-bottom: 9px;
+        
+
         font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -310,12 +360,20 @@ color: var(--accent-color);
 }
 .basement-email,
 .basement-tel{
+        
+
         font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 400;
         line-height: 1.71;
         color: var(--address-color);
         text-decoration: none;
+}
+.basement-email{
+    padding-bottom: 9px;
+}
+.basement-tel{
+    padding-bottom: 60px;
 }
 
 .basement-email:hover,
@@ -325,6 +383,8 @@ color: var(--accent-color);
     color: var(--accent-color);
 
 }
+
+
 
 /* Портфолио */
 .list-btn
