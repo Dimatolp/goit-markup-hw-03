@@ -49,7 +49,8 @@ body{
         }
 
 /* Логотип */
-.logo{
+.main-nav .logo{
+    margin-right: 93px;
         padding-top: 24px;
         padding-bottom: 25px;
 
@@ -81,7 +82,7 @@ body{
 /* Навигация по сайту */
 .site-nav{
     display: flex;
-    padding-left: 93px;
+    
 }
 .site-nav .item + .item{
     
@@ -183,12 +184,12 @@ color: var(--accent-color);
 
 .hero{
     text-align: center;
-    margin-bottom: 94px;
+    
 }
 
 .hero-title{
         
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     
     font-weight: 900;
         font-size: 44px;
@@ -249,18 +250,19 @@ margin-right: 30px;
 /* caption */
 .caption{
     align-self:center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 /* Секции */
 .section{
     padding-bottom: 94px;
+    padding-top: 94px;
     justify-content:space-around;
 }
 
 
 .section-title{
-        padding-bottom: 10px;
+        margin-bottom: 10px;
 
 
     font-weight: 700;
@@ -274,8 +276,8 @@ margin-right: 30px;
 }
 
 .section-team .item{
-    padding-top: 94px;
-    padding-bottom: 50px;
+    
+    margin-bottom: 50px;
 }
 .section>h2,
 .section-team>h2{
@@ -288,6 +290,7 @@ margin-right: 30px;
 
 /* container-team */
 .container-team{
+    background-color: var(--primary-color);
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
@@ -296,7 +299,8 @@ margin-right: 30px;
 
 /* pic */
 .pic{
-    padding-bottom: 30px;
+    
+    margin-bottom: 30px;
 }
 
 .container .container-team + .container-team{
@@ -305,7 +309,7 @@ margin-right: 30px;
 
 .section-team{
     background-color: var(--secondary-grey-color);
-    padding-bottom: 94px;
+    
 }
 .section-team-color{
     background-color: var(--primary-color);
@@ -313,7 +317,8 @@ margin-right: 30px;
     
 }
 .team-name{
-        padding-bottom: 10px;
+    
+        margin-bottom: 10px;
 
     font-weight: 500;
         font-size: 16px;
@@ -322,7 +327,8 @@ margin-right: 30px;
         
 }
 .team-job{
-       padding-bottom: 30px; 
+    
+       margin-bottom: 30px; 
 
         font-size: 16px;
         line-height: 1.19;
@@ -332,17 +338,29 @@ margin-right: 30px;
 
 
 /* Подвал */
+.container-footer{
+    display: inline-block;
+}
 
 
-.basement .logo{
-    padding-top: 0px;
-    padding-bottom: 0px;
+.container-footer .logo{
+    
     margin-left: 215px;
     margin-bottom: 20px;
+    font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        
+        text-decoration: none;
+        color: var(--main-text-color);
 }   
 
 .container-address{
     margin-left: 215px;
+}
+.container-address .item{
+    margin-bottom: 9px;
 }
 
 .basement{
@@ -350,7 +368,7 @@ background-color: var(--secondary-color);
     
 }
 .basement-address{
-        padding-bottom: 9px;
+        margin-bottom: 9px;
         
 
         font-family: 'Roboto',sans-serif;
@@ -370,12 +388,9 @@ background-color: var(--secondary-color);
         color: var(--address-color);
         text-decoration: none;
 }
-.basement-email{
-    padding-bottom: 9px;
-}
-.basement-tel{
-    padding-bottom: 60px;
-}
+
+
+
 
 .basement-email:hover,
 .basement-tel:hover,
