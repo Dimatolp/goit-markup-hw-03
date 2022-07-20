@@ -344,7 +344,7 @@ margin-right: 30px;
 
 
 .container-footer .logo{
-    
+    display:flex;
     margin-left: 215px;
     margin-bottom: 20px;
     font-family: Raleway, sans-serif;
