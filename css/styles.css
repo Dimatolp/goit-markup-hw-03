@@ -47,6 +47,9 @@ body{
             clip: rect(0 0 0 0);
             overflow: hidden;
         }
+                .link-decoration {
+                    text-decoration: none;
+                }
 
 /* Логотип */
 .main-nav .logo{
@@ -434,7 +437,5 @@ background-color: var(--secondary-color);
         
         
     }
-    .link-decoration{
-        text-decoration: none;
-    }
+    
     
